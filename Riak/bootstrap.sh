@@ -15,7 +15,8 @@ install_riak(){
   wget http://s3.amazonaws.com/downloads.basho.com/riak/2.0/2.0.5/riak-2.0.5.tar.gz
   tar zxf riak-2.0.5.tar.gz
   cd riak-2.0.5
-  make rel
+  make all
+  make devrel DEVNODES=3
 }
 
 main
